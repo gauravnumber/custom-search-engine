@@ -26,6 +26,15 @@ function mapOfURL(sitename, yourSearch) {
     `https://www.pdfdrive.com/search?q=${yourSearch}&pagecount=&pubyear=&searchin=en`
   );
 
+  sites.set(
+    "translate",
+    `https://translate.google.com/?hl=hi&sl=en&tl=hi&text=${yourSearch}&op=translate`
+  );
+
+  sites.set("apkdone", `https://apkdone.com/?s=${yourSearch}`);
+  sites.set("phind", `https://phind.com/search?q=${yourSearch}`);
+  sites.set("flipkart", `https://www.flipkart.com/search?q=${yourSearch}`);
+
   const url = sites.get(sitename);
 
   return url;
@@ -37,3 +46,15 @@ function serve(sitename) {
   const url = mapOfURL(sitename, yourSearch);
   window.location.assign(url);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  let input = document.getElementsByTagName("input");
+  for (let i = 0; i < input.length; i++) {
+    input[i].addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        const sitename = input[i].getAttribute("id");
+        serve(sitename);
+      }
+    });
+  }
+});
