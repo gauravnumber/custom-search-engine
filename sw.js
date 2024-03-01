@@ -1,10 +1,6 @@
 const cacheName = "v1";
 
-const cacheAssets = [
-  "index.html",
-  "script.js",
-  "https://cdn.simplecss.org/simple.min.css",
-];
+const cacheAssets = ["/", "/index.html", "/script.js"];
 
 self.addEventListener("install", (e) => {
   console.log("Service worker: installed");
