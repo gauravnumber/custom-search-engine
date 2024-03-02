@@ -43,6 +43,7 @@ function mapOfURL(sitename, yourSearch) {
   sites.set("apkdone", `https://apkdone.com/?s=${yourSearch}`);
   sites.set("phind", `https://phind.com/search?q=${yourSearch}`);
   sites.set("flipkart", `https://www.flipkart.com/search?q=${yourSearch}`);
+  sites.set("whatsapp", `https://wa.me/${yourSearch}`);
 
   const url = sites.get(sitename);
 
