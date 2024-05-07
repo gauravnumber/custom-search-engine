@@ -41,7 +41,12 @@ function mapOfURL(sitename, yourSearch) {
     `https://translate.google.com/?hl=hi&sl=en&tl=hi&text=${yourSearch}&op=translate`
   );
 
+  sites.set(
+    "an1",
+    `https://an1.com/?story=${yourSearch}&do=search&subaction=search`
+  );
   sites.set("apkdone", `https://apkdone.com/?s=${yourSearch}`);
+  sites.set("apkmb", `https://apkmb.com/?s=${yourSearch}`);
   sites.set("phind", `https://phind.com/search?q=${yourSearch}`);
   sites.set("flipkart", `https://www.flipkart.com/search?q=${yourSearch}`);
   sites.set("whatsapp", `https://wa.me/${yourSearch}`);
