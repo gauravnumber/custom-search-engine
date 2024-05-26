@@ -15,8 +15,8 @@ function mapOfURL(sitename, yourSearch) {
   );
 
   sites.set("kdrama", `https://runasian.net/search?keyword=${yourSearch}`);
-  sites.set("bollywood", `https://topmovies.asia/search/${yourSearch}`);
-  sites.set("movie", `https://moviesmod.biz/search/${yourSearch}`);
+  sites.set("bollywood", `https://topmovies.fans/search/${yourSearch}`);
+  sites.set("movie", `https://moviesmod.info/search/${yourSearch}`);
   sites.set("my-drama-list", `https://mydramalist.com/search?q=${yourSearch}`);
   sites.set(
     "my-anime-list",
