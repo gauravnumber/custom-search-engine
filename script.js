@@ -29,7 +29,7 @@ function mapOfURL(sitename, yourSearch) {
   sites.set("truecaller", `https://www.truecaller.com/search/in/${yourSearch}`);
   sites.set(
     "annas-archive",
-    `https://annas-archive.org/search?index=&q=${yourSearch}&sort=&lang=en`
+    `https://annas-archive.org/search?index=&q=${yourSearch}&sort=&lang=en&ext=pdf`
   );
   sites.set(
     "pdfdrive",
