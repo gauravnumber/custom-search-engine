@@ -36,6 +36,8 @@ function mapOfURL(sitename, yourSearch) {
     `https://www.pdfdrive.com/search?q=${yourSearch}&pagecount=&pubyear=&searchin=en`
   );
 
+  sites.set("oceanofpdf", `https://www.oceanofpdf.com/?s=${yourSearch}`);
+
   sites.set(
     "translate",
     `https://translate.google.com/?hl=hi&sl=en&tl=hi&text=${yourSearch}&op=translate`
