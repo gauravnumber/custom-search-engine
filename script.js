@@ -33,7 +33,7 @@ function mapOfURL(sitename, yourSearch) {
   );
   sites.set(
     "pdfdrive",
-    `https://www.pdfdrive.com/search?q=${yourSearch}&pagecount=&pubyear=&searchin=en`
+    `https://www.pdfdrive.com/search?q=${yourSearch}&pagecount=&pubyear=&searchin=en&em=&more=true`
   );
 
   sites.set("oceanofpdf", `https://www.oceanofpdf.com/?s=${yourSearch}`);
