@@ -37,6 +37,7 @@ function mapOfURL(sitename, yourSearch) {
   );
 
   sites.set("oceanofpdf", `https://www.oceanofpdf.com/?s=${yourSearch}`);
+  sites.set("pdfroom", `https://www.pdfroom.com/search?query=${yourSearch}`);
 
   sites.set(
     "translate",
